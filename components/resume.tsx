@@ -22,7 +22,7 @@ export function Resume() {
 
   const handleDownloadCV = () => {
     const link = document.createElement("a");
-    link.href = "/projects/cv.pdf";
+    link.href = "/projects/Abdulla-Ahmed-Mustafawi-CV.pdf";
     link.download = "Abdulla_Ahmed_Mustafawi_CV.pdf";
     document.body.appendChild(link);
     link.click();

@@ -90,12 +90,21 @@ export function PersonalLife() {
                 </div>
               </div>
 
-              <div className="flex justify-center">
+              <div className="flex flex-col gap-6">
                 <div className="relative w-full max-w-md">
                   <div className="relative rounded-lg overflow-hidden shadow-xl border border-border">
                     <img
                       src="/images/childhoodimage.png"
                       alt="Childhood photo wearing traditional thob"
+                      className="w-full h-auto object-cover"
+                    />
+                  </div>
+                </div>
+                <div className="relative w-full max-w-md">
+                  <div className="relative rounded-lg overflow-hidden shadow-xl border border-border">
+                    <img
+                      src="/myimageinahorseasachild.png"
+                      alt="Riding horses as a child"
                       className="w-full h-auto object-cover"
                     />
                   </div>
@@ -162,31 +171,31 @@ export function PersonalLife() {
                   that connects me with nature and tradition. Horse riding has taught me patience, respect for animals,
                   and the importance of building trust and understanding.
                 </p>
-                <div className="mt-6">
-                  <div className="relative w-full h-80 rounded-lg overflow-hidden border border-border">
-                    <img
-                      src="/myimageinahorseasachild.png"
-                      alt="Riding horses at the farm"
-                      className="w-full h-full object-contain object-top group-hover:scale-105 transition-transform duration-500"
-                    />
-                  </div>
-                </div>
               </div>
             </div>
 
             {/* Beach Trips */}
-            <div className="p-8 bg-primary text-primary-foreground rounded-lg border border-primary/20 shadow-lg">
-              <div className="flex items-center gap-3 mb-4">
-                <div className="p-3 rounded-lg bg-primary-foreground/10 border border-primary-foreground/20">
-                  <Waves className="w-6 h-6 text-primary-foreground" />
+            <div className="grid md:grid-cols-2 gap-8 items-center">
+              <div className="p-8 bg-primary text-primary-foreground rounded-lg border border-primary/20 shadow-lg">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="p-3 rounded-lg bg-primary-foreground/10 border border-primary-foreground/20">
+                    <Waves className="w-6 h-6 text-primary-foreground" />
+                  </div>
+                  <h4 className="text-2xl font-semibold">Beach Trips</h4>
                 </div>
-                <h4 className="text-2xl font-semibold">Beach Trips</h4>
+                <p className="leading-relaxed text-primary-foreground/90">
+                  Every Friday during the summer, I love going to the beach. It's a cherished tradition that allows me to
+                  relax, spend quality time with family and friends, and enjoy the beautiful Qatari coastline. These
+                  regular beach trips are a perfect way to unwind and recharge after a busy week.
+                </p>
               </div>
-              <p className="leading-relaxed text-primary-foreground/90">
-                Every Friday during the summer, I love going to the beach. It's a cherished tradition that allows me to
-                relax, spend quality time with family and friends, and enjoy the beautiful Qatari coastline. These
-                regular beach trips are a perfect way to unwind and recharge after a busy week.
-              </p>
+              <div className="relative w-full h-64 md:h-80 rounded-lg overflow-hidden border border-border shadow-lg">
+                <img
+                  src="/beachimage.png"
+                  alt="Beach trips in Qatar"
+                  className="w-full h-full object-cover"
+                />
+              </div>
             </div>
           </div>
         </div>
