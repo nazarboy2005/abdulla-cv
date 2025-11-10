@@ -1,6 +1,6 @@
 "use client"
 
-import { Heart, MapPin, Sun, Football, Horse, Waves, Camera } from "lucide-react"
+import { Heart, MapPin, Sun, Target, Activity, Waves, Camera } from "lucide-react"
 import { useEffect, useRef, useState } from "react"
 
 export function PersonalLife() {
@@ -105,7 +105,7 @@ export function PersonalLife() {
               {/* Football Section */}
               <div className="p-6 bg-card rounded-xl border border-border hover:border-primary transition-smooth hover:shadow-lg">
                 <div className="flex items-center gap-3 mb-4">
-                  <Football className="w-6 h-6 text-primary" />
+                  <Target className="w-6 h-6 text-primary" />
                   <h4 className="text-2xl font-bold">Football</h4>
                 </div>
                 <p className="text-muted-foreground mb-4 leading-relaxed">
@@ -129,7 +129,7 @@ export function PersonalLife() {
               {/* Horse Riding Section */}
               <div className="p-6 bg-card rounded-xl border border-border hover:border-primary transition-smooth hover:shadow-lg">
                 <div className="flex items-center gap-3 mb-4">
-                  <Horse className="w-6 h-6 text-primary" />
+                  <Activity className="w-6 h-6 text-primary" />
                   <h4 className="text-2xl font-bold">Horse Riding</h4>
                 </div>
                 <p className="text-muted-foreground mb-4 leading-relaxed">
