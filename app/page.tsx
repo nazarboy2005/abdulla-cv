@@ -4,6 +4,7 @@ import { ThemeToggle } from "@/components/theme-toggle"
 import { Navigation } from "@/components/navigation"
 import { Hero } from "@/components/hero"
 import { About } from "@/components/about"
+import { PersonalLife } from "@/components/personal-life"
 import { Resume } from "@/components/resume"
 import { Projects } from "@/components/projects"
 import { Video } from "@/components/video"
@@ -27,6 +28,7 @@ export default function Home() {
         <Navigation />
         <Hero />
         <About />
+        <PersonalLife />
         <Resume />
         <Projects />
         <Video />

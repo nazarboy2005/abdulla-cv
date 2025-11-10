@@ -15,6 +15,7 @@ export function Navigation() {
 
   const sections = [
     { id: "about", label: "About" },
+    { id: "personal-life", label: "Personal Life" },
     { id: "resume", label: "Resume" },
     { id: "projects", label: "Projects" },
     { id: "video", label: "Video" },
