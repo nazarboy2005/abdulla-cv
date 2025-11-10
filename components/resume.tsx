@@ -33,12 +33,15 @@ export function Resume() {
     <section
       id="resume"
       ref={ref}
-      className="py-20 px-4 sm:px-6 lg:px-8 bg-card/30 transition-smooth"
+      className="py-24 px-4 sm:px-6 lg:px-8 transition-smooth"
     >
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-4xl sm:text-5xl font-bold mb-12 text-center">
-          My <span className="text-primary">Resume</span>
-        </h2>
+        <div className="text-center mb-16">
+          <h2 className="text-4xl sm:text-5xl font-bold mb-4 text-foreground">
+            My <span className="text-primary">Resume</span>
+          </h2>
+          <div className="w-24 h-1 bg-primary mx-auto rounded-full"></div>
+        </div>
 
         <div className="grid md:grid-cols-3 gap-8 mb-12">
           {/* Education */}

@@ -85,12 +85,15 @@ export function Projects() {
     <section
       id="projects"
       ref={ref}
-      className="py-20 px-4 sm:px-6 lg:px-8 transition-smooth"
+      className="py-24 px-4 sm:px-6 lg:px-8 transition-smooth bg-muted/30"
     >
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-4xl sm:text-5xl font-bold mb-12 text-center">
-          Project <span className="text-primary">Showcase</span>
-        </h2>
+        <div className="text-center mb-16">
+          <h2 className="text-4xl sm:text-5xl font-bold mb-4 text-foreground">
+            Project <span className="text-primary">Showcase</span>
+          </h2>
+          <div className="w-24 h-1 bg-primary mx-auto rounded-full"></div>
+        </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => {
@@ -105,9 +108,9 @@ export function Projects() {
                 }`}
                 style={{ transitionDelay: `${index * 100}ms` }}
               >
-                <div className="group h-full flex flex-col bg-card rounded-xl border-2 border-border hover:border-primary hover:shadow-2xl transition-smooth hover:-translate-y-2 overflow-hidden relative cursor-pointer">
+                <div className="group h-full flex flex-col bg-card rounded-lg border border-border hover:border-primary/50 hover:shadow-xl transition-smooth overflow-hidden relative">
                   {/* Project Image */}
-                  <div className="relative w-full h-48 overflow-hidden bg-gradient-to-br from-primary/10 to-accent/10">
+                  <div className="relative w-full h-48 overflow-hidden bg-muted/50">
                     {project.image !== "/placeholder.svg" ? (
                       <Image
                         src={project.image}
@@ -124,13 +127,13 @@ export function Projects() {
                         <IconComponent className="w-16 h-16 text-primary/60" />
                       </div>
                     )}
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-smooth flex items-center justify-center gap-3">
+                    <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-smooth flex items-center justify-center gap-3">
                       {project.viewUrl && (
                         <a
                           href={project.viewUrl}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="p-3 bg-primary text-primary-foreground rounded-full hover:bg-primary/90 transition-smooth hover:scale-110"
+                          className="p-3 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-smooth"
                           onClick={(e) => e.stopPropagation()}
                         >
                           <ExternalLink className="w-5 h-5" />
@@ -147,7 +150,7 @@ export function Projects() {
                                 .pop()}`
                             );
                           }}
-                          className="p-3 bg-accent text-accent-foreground rounded-full hover:bg-accent/90 transition-smooth hover:scale-110"
+                          className="p-3 bg-background text-foreground rounded-lg hover:bg-muted transition-smooth"
                         >
                           <Download className="w-5 h-5" />
                         </button>
@@ -155,27 +158,24 @@ export function Projects() {
                     </div>
                   </div>
 
-                  {/* Animated background gradient */}
-                  <div className="absolute inset-0 bg-gradient-to-r from-primary/0 to-accent/0 group-hover:from-primary/5 group-hover:to-accent/5 transition-smooth pointer-events-none" />
-
                   {/* Content */}
-                  <div className="flex-1 p-8 relative z-10">
+                  <div className="flex-1 p-6 relative z-10">
                     <div className="flex items-start justify-between mb-4">
                       <div className="flex flex-col gap-2">
-                        <span className="px-4 py-2 bg-primary/20 text-primary rounded-lg text-sm font-semibold group-hover:bg-primary/30 transition-smooth">
+                        <span className="px-3 py-1 bg-primary/10 text-primary rounded-md text-xs font-semibold border border-primary/20">
                           {project.type}
                         </span>
-                        <span className="px-3 py-1 bg-accent/20 text-accent rounded text-xs font-medium group-hover:bg-accent/30 transition-smooth">
-                          Course: {project.course}
+                        <span className="px-2 py-1 bg-muted text-muted-foreground rounded text-xs font-medium">
+                          {project.course}
                         </span>
                       </div>
                     </div>
 
-                    <h3 className="text-2xl font-bold mb-3 group-hover:text-primary transition-smooth">
+                    <h3 className="text-xl font-semibold mb-3 text-foreground group-hover:text-primary transition-smooth">
                       {project.title}
                     </h3>
 
-                    <p className="text-muted-foreground mb-6 leading-relaxed line-clamp-4">
+                    <p className="text-muted-foreground mb-6 leading-relaxed line-clamp-4 text-sm">
                       {project.description}
                     </p>
 
@@ -183,7 +183,7 @@ export function Projects() {
                       {project.tags.map((tag, i) => (
                         <span
                           key={i}
-                          className="px-3 py-1 bg-primary/10 text-primary rounded-full text-xs font-medium group-hover:bg-primary/20 transition-smooth"
+                          className="px-2.5 py-1 bg-muted text-muted-foreground rounded-md text-xs font-medium"
                         >
                           {tag}
                         </span>
@@ -213,7 +213,7 @@ export function Projects() {
                               `${project.title}.pdf`
                             );
                           }}
-                          className="flex-1 px-4 py-2 bg-accent text-accent-foreground rounded-lg text-sm font-semibold hover:bg-accent/90 transition-smooth flex items-center justify-center gap-2"
+                          className="flex-1 px-4 py-2 border border-border text-foreground rounded-lg text-sm font-semibold hover:bg-muted hover:border-primary/50 transition-smooth flex items-center justify-center gap-2"
                         >
                           <Download className="w-4 h-4" />
                           Download

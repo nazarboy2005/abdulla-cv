@@ -21,11 +21,14 @@ export function About() {
   }, [])
 
   return (
-    <section id="about" ref={ref} className="py-20 px-4 sm:px-6 lg:px-8 transition-smooth">
+    <section id="about" ref={ref} className="py-24 px-4 sm:px-6 lg:px-8 transition-smooth">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-4xl sm:text-5xl font-bold mb-12 text-center">
-          About <span className="text-primary">Me</span>
-        </h2>
+        <div className="text-center mb-16">
+          <h2 className="text-4xl sm:text-5xl font-bold mb-4 text-foreground">
+            About <span className="text-primary">Me</span>
+          </h2>
+          <div className="w-24 h-1 bg-primary mx-auto rounded-full"></div>
+        </div>
 
         <div className="grid md:grid-cols-3 gap-12 items-start">
           {/* Left side - Profile picture */}
@@ -75,12 +78,12 @@ export function About() {
               </div>
 
               {/* Contact Info */}
-              <div className="p-6 bg-gradient-to-r from-primary/10 to-accent/10 rounded-xl border border-primary/30">
-                <h3 className="text-lg font-bold mb-4">Contact Information</h3>
+              <div className="p-6 bg-primary/5 rounded-xl border border-primary/20">
+                <h3 className="text-lg font-semibold mb-4 text-foreground">Contact Information</h3>
                 <div className="space-y-3">
                   <div className="flex items-center gap-3">
                     <Mail className="w-5 h-5 text-primary" />
-                    <a href="mailto:amustafawi05@gmail.com" className="text-primary hover:underline">
+                    <a href="mailto:amustafawi05@gmail.com" className="text-muted-foreground hover:text-primary transition-smooth">
                       amustafawi05@gmail.com
                     </a>
                   </div>
@@ -90,7 +93,7 @@ export function About() {
                       href="https://instagram.com/ib260am"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-primary hover:underline"
+                      className="text-muted-foreground hover:text-primary transition-smooth"
                     >
                       @ib260am
                     </a>
@@ -108,9 +111,9 @@ export function About() {
                 ].map((stat, i) => (
                   <div
                     key={i}
-                    className="p-4 bg-card rounded-xl border border-border hover:border-primary transition-smooth hover:-translate-y-2 group cursor-pointer"
+                    className="p-6 bg-card rounded-lg border border-border hover:border-primary/50 transition-smooth hover:shadow-lg group"
                   >
-                    <div className="text-3xl font-bold text-primary mb-1 group-hover:text-accent transition-smooth">
+                    <div className="text-3xl font-bold text-primary mb-2">
                       {stat.number}
                     </div>
                     <div className="text-sm text-muted-foreground font-medium">{stat.label}</div>

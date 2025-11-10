@@ -21,11 +21,14 @@ export function Contact() {
   }, [])
 
   return (
-    <section id="contact" ref={ref} className="py-20 px-4 sm:px-6 lg:px-8 transition-smooth">
+    <section id="contact" ref={ref} className="py-24 px-4 sm:px-6 lg:px-8 transition-smooth bg-muted/30">
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-4xl sm:text-5xl font-bold mb-12 text-center">
-          Get In <span className="text-primary">Touch</span>
-        </h2>
+        <div className="text-center mb-16">
+          <h2 className="text-4xl sm:text-5xl font-bold mb-4 text-foreground">
+            Get In <span className="text-primary">Touch</span>
+          </h2>
+          <div className="w-24 h-1 bg-primary mx-auto rounded-full"></div>
+        </div>
 
         <div className="grid md:grid-cols-2 gap-8">
           {/* Contact Info */}
