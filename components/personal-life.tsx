@@ -90,21 +90,12 @@ export function PersonalLife() {
                 </div>
               </div>
 
-              <div className="flex flex-col gap-6">
+              <div className="flex justify-center">
                 <div className="relative w-full max-w-md">
                   <div className="relative rounded-lg overflow-hidden shadow-xl border border-border">
                     <img
                       src="/images/childhoodimage.png"
                       alt="Childhood photo wearing traditional thob"
-                      className="w-full h-auto object-cover"
-                    />
-                  </div>
-                </div>
-                <div className="relative w-full max-w-md">
-                  <div className="relative rounded-lg overflow-hidden shadow-xl border border-border">
-                    <img
-                      src="/myimageinahorseasachild.png"
-                      alt="Riding horses as a child"
                       className="w-full h-auto object-cover"
                     />
                   </div>
@@ -128,9 +119,9 @@ export function PersonalLife() {
               </h3>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-8 mb-8">
+            <div className="grid md:grid-cols-3 gap-8">
               {/* Football Section */}
-              <div className="group p-8 bg-card rounded-lg border border-border hover:border-primary/50 transition-all duration-300 hover:shadow-lg">
+              <div className="group p-8 bg-card rounded-lg border border-border hover:border-primary/50 transition-all duration-300 hover:shadow-lg flex flex-col">
                 <div className="flex items-center gap-3 mb-6">
                   <div className="p-2.5 rounded-lg bg-primary/10 border border-primary/20">
                     <Target className="w-6 h-6 text-primary" />
@@ -139,13 +130,13 @@ export function PersonalLife() {
                     Football
                   </h4>
                 </div>
-                <p className="text-muted-foreground mb-6 leading-relaxed">
+                <p className="text-muted-foreground mb-6 leading-relaxed flex-grow">
                   Football is my best sport and one of my greatest passions. I played football throughout high school,
                   where I developed not just my skills on the field, but also learned valuable lessons about teamwork,
                   discipline, and perseverance. The sport taught me the importance of dedication and working together
                   toward a common goal.
                 </p>
-                <div className="mt-6">
+                <div className="mt-auto">
                   <div className="relative w-full h-64 rounded-lg overflow-hidden border border-border">
                     <img
                       src="/meinfootball.png"
@@ -157,7 +148,7 @@ export function PersonalLife() {
               </div>
 
               {/* Horse Riding Section */}
-              <div className="group p-8 bg-card rounded-lg border border-border hover:border-primary/50 transition-all duration-300 hover:shadow-lg">
+              <div className="group p-8 bg-card rounded-lg border border-border hover:border-primary/50 transition-all duration-300 hover:shadow-lg flex flex-col">
                 <div className="flex items-center gap-3 mb-6">
                   <div className="p-2.5 rounded-lg bg-primary/10 border border-primary/20">
                     <Activity className="w-6 h-6 text-primary" />
@@ -166,35 +157,44 @@ export function PersonalLife() {
                     Horse Riding
                   </h4>
                 </div>
-                <p className="text-muted-foreground mb-6 leading-relaxed">
+                <p className="text-muted-foreground mb-6 leading-relaxed flex-grow">
                   Riding horses at our farm is one of my favorite hobbies. It's a peaceful and exhilarating experience
                   that connects me with nature and tradition. Horse riding has taught me patience, respect for animals,
                   and the importance of building trust and understanding.
                 </p>
-              </div>
-            </div>
-
-            {/* Beach Trips */}
-            <div className="grid md:grid-cols-2 gap-8 items-center">
-              <div className="p-8 bg-primary text-primary-foreground rounded-lg border border-primary/20 shadow-lg">
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="p-3 rounded-lg bg-primary-foreground/10 border border-primary-foreground/20">
-                    <Waves className="w-6 h-6 text-primary-foreground" />
+                <div className="mt-auto">
+                  <div className="relative w-full h-64 rounded-lg overflow-hidden border border-border">
+                    <img
+                      src="/myimageinahorseasachild.png"
+                      alt="Riding horses at the farm"
+                      className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
+                    />
                   </div>
-                  <h4 className="text-2xl font-semibold">Beach Trips</h4>
                 </div>
-                <p className="leading-relaxed text-primary-foreground/90">
+              </div>
+
+              {/* Beach Trips */}
+              <div className="group p-8 bg-card rounded-lg border border-border hover:border-primary/50 transition-all duration-300 hover:shadow-lg flex flex-col">
+                <div className="flex items-center gap-3 mb-6">
+                  <div className="p-2.5 rounded-lg bg-primary/10 border border-primary/20">
+                    <Waves className="w-6 h-6 text-primary" />
+                  </div>
+                  <h4 className="text-2xl font-semibold text-foreground">Beach Trips</h4>
+                </div>
+                <p className="text-muted-foreground mb-6 leading-relaxed flex-grow">
                   Every Friday during the summer, I love going to the beach. It's a cherished tradition that allows me to
                   relax, spend quality time with family and friends, and enjoy the beautiful Qatari coastline. These
                   regular beach trips are a perfect way to unwind and recharge after a busy week.
                 </p>
-              </div>
-              <div className="relative w-full h-64 md:h-80 rounded-lg overflow-hidden border border-border shadow-lg">
-                <img
-                  src="/beachimage.png"
-                  alt="Beach trips in Qatar"
-                  className="w-full h-full object-cover"
-                />
+                <div className="mt-auto">
+                  <div className="relative w-full h-64 rounded-lg overflow-hidden border border-border">
+                    <img
+                      src="/beachimage.png"
+                      alt="Beach trips in Qatar"
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                  </div>
+                </div>
               </div>
             </div>
           </div>
